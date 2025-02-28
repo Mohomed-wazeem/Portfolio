@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { FaReact, FaNode, FaDatabase } from 'react-icons/fa';
 import { SiNextdotjs, SiExpress } from 'react-icons/si';
 import '../index.css';
-import heroImage from '../assets/about.webp';
+import heroImage from '../assets/abt.jpg';
 
 const About = () => {
   useEffect(() => {
@@ -18,11 +18,11 @@ const About = () => {
           if (entry.isIntersecting) {
             image?.classList.add('animate-3d');
             textContent?.classList.add('animate-slide-right');
-            observer.disconnect(); // Stops observing after animation triggers
+            observer.disconnect(); 
           }
         });
       },
-      { threshold: 0.5 } // Triggers when 50% of the section is visible
+      { threshold: 0.5 } 
     );
 
     observer.observe(aboutSection);
@@ -45,15 +45,20 @@ const About = () => {
             <p className="lead mb-4">I'm a passionate Full Stack Developer specializing in the MERN Stack. I build interactive, scalable, and high-performance web applications that enhance user experience.</p>
             <p className="mb-4">With a strong foundation in front-end and back-end development, I craft intuitive designs and robust architectures. I thrive on solving complex problems and delivering efficient solutions.</p>
             
-            <a href="/resume.pdf" className="btn btn-outline-warning btn-lg mt-4">Download CV</a>
+            <a 
+              href="/resume.pdf" 
+              className="btn btn-outline-warning btn-lg mt-4" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Download CV
+            </a>
           </div>
         </div>
       </div>
 
-      {/* Custom gap */}
       <div className="custom-gap"></div>
 
-      {/* Technologies Section */}
       <div className="mt-5 mb-5">
         <h3 className="fw-bold text-warning mb-5 text-center">Technologies</h3>
         <div className="tech-container">

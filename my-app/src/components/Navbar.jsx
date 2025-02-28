@@ -23,17 +23,18 @@ const SiteNavigation = () => {
   return (
     <Navbar expand="lg" className="navbar-container">
       <Container fluid>
-        {/* Navbar Brand - Home Icon */}
-        <Navbar.Brand onClick={() => scrollToSection("home")} className="navbar-icon">
-          <FaHome size={30} color="white" className="icon-left-margin" />
-        </Navbar.Brand>
+      <Navbar.Brand
+  onClick={() => scrollToSection("home")}
+  className="fw-bold fs-5 text-white cursor-pointer"
+>
+  Portfolio
+</Navbar.Brand>
 
-        {/* Menu Icon for Mobile */}
+
         <Button className="menu-icon d-lg-none" onClick={toggleMenu}>
           <FaBars size={24} color="white" />
         </Button>
 
-        {/* Navigation Links */}
         <Navbar.Collapse id="basic-navbar-nav" className={`mobile-menu ${menuOpen ? "show" : ""}`}>
           <Nav className="mx-auto">
             <Nav.Link onClick={() => scrollToSection("about")} className="nav-item">
@@ -50,7 +51,6 @@ const SiteNavigation = () => {
             </Nav.Link>
           </Nav>
 
-          {/* Social Icons in Mobile View */}
           <div className="nav-divider d-lg-none"></div>
           <div className="mobile-social-icons d-lg-none">
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
@@ -65,7 +65,6 @@ const SiteNavigation = () => {
           </div>
         </Navbar.Collapse>
 
-        {/* Social Icons in Desktop View */}
         <div className="nav-social-icons d-none d-lg-flex">
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />

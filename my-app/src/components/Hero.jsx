@@ -39,8 +39,7 @@ export const Hero = () => {
             </a>
           </div>
 
-          {/* Image Section */}
-          <div className="col-lg-6 text-center text-lg-end mt-4 mt-lg-0">
+          <div className="col-lg-6 text-center text-lg-end mt-5 mt-lg-0">
             <img 
               ref={imageRef}
               src={heroImage} 

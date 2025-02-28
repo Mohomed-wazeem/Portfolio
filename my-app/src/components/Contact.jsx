@@ -8,21 +8,19 @@ const Contact = () => {
         <h2 className="fw-bold text-warning mb-4">Contact Me</h2>
         <p className="lead">Feel free to reach out for collaborations or inquiries.</p>
 
-        {/* Contact Icons */}
         <div className="d-flex justify-content-center gap-4 mb-4">
-          <a href="mailto:example@email.com" className="text-white" aria-label="Email">
+          <a href="mailto:mohomedwazeem729@gmail.com" className="text-white" aria-label="Email">
             <FaEnvelope size={32} />
           </a>
           <a href="https://www.linkedin.com/in/your-linkedin-profile" className="text-white" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin size={32} />
           </a>
-          <a href="https://github.com/your-github-username" className="text-white" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com" className="text-white" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub size={32} />
           </a>
         </div>
 
-        {/* Email Button */}
-        <a href="mailto:example@email.com" className="btn btn-outline-warning">Email Me</a>
+        <a href="mailto:mohomedwazeem729@gmail.com" className="btn btn-outline-warning">Email Me</a>
       </div>
     </section>
   );

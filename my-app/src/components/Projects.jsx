@@ -3,9 +3,6 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import projectImage2 from "../assets/prj2.png";
 import projectImage3 from "../assets/petPr.jpg";
 import projectImage4 from "../assets/port.jpg";
-
-
-
 import "../index.css";
 
 const projectData = [
